@@ -1,0 +1,67 @@
+
+.title {
+  padding-top: 5px;
+  padding:5px 0px 0px ;
+}
+.colIcons{
+  padding-top: 10px;
+  text-align: end;
+  .icons{
+    width: 24px;
+    text-align: center;
+  }
+}
+ion-grid{
+  padding-bottom: 0px;
+}
+
+
+div.scrollmenu {
+  margin-top: 5px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+div.scrollmenu a {
+  margin-left: 10px;
+  border-radius: 10px;
+  //background-color: #fbfbfb;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px 5px 30px ;
+  text-decoration: none;
+  position: relative;
+  .iconsButtonList{
+    position: absolute;
+    left: 2px;
+    right: 20px;
+    width: 24px;
+    text-align: start;
+    padding: 5px 5px 5px 5px;
+  }
+}
+
+.aCardsTop{
+  margin-top: 5px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background-image: url("../../assets/GroupPage/placeholder.png");
+  background-position: center;
+  position: relative;
+  span{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    color: white;
+  }
+}
+
+
+
+

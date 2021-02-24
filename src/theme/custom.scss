@@ -1,3 +1,13 @@
-ion-title{
-  font-family: SFProDisplay-Regular;
+ion-content{
+  --background:var(--ion-color-medium);
 }
+ion-grid{
+  padding: 0px 0px 5px;
+}
+
+.white{
+  background: white;
+
+  --background: white;
+}
+

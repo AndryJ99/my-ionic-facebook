@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Post} from '../class/post';
-
 @Component({
   selector: 'app-groups',
   templateUrl: './groups.page.html',

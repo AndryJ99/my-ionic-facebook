@@ -1,14 +1,24 @@
 <div *ngFor="let d of datas">
   <ion-card>
     <ion-card-header>
-      <ion-card-title>{{d.title}}</ion-card-title>
-      <ion-card-subtitle>{{d.subtitle}}</ion-card-subtitle>
+      <ion-avatar>
+        <img src="../../assets/avatar-placeholder.png" alt="Avatar">
+      </ion-avatar>
+      <div>
+        <ion-card-title>{{d.title}}</ion-card-title>
+        <ion-card-subtitle>{{d.subtitle}}</ion-card-subtitle>
+      </div>
+
     </ion-card-header>
 
     <ion-card-content>
-      {{d.description}}
+      <div *ngIf="expand===false">{{ (d.description.length>299)? (d.description | slice:0:299)+'..':(d.description) }} <a *ngIf="d.description.length>300" (click)="clicked()">Other</a></div>
+      <div *ngIf="expand===true">{{d.description}} <a (click)="clicked()">Reduce</a></div>
+
+
+
       <img [src]="d.image" alt="Image post">
-    
+
     </ion-card-content>
   </ion-card>
 </div>

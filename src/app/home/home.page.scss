@@ -23,32 +23,187 @@
   width: 20px;
 }
 
+.liveChatPadding{
+  padding-bottom: 8px;
+}
+
+.storyPadding{
+  padding:10px 0px;
+}
+
+ion-grid{
+  ion-row{
+    ion-avatar{
+      margin: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    ion-input{
+      align-self: center;
+      --padding-start: 15px;
+      --padding-top: 0px;
+      --padding-bottom: 0px;
+      border-radius: 20px;
+      border: solid 1px grey;
+      height:35px;
+    }
 
 
-#container {
+
+    div{
+      color: dimgrey;
+      margin: auto;
+      display: flex;
+
+
+
+      img {
+        align-self: center;
+        margin-right: 3px;
+        width: 15px;
+        height: 15px;
+      }
+
+  }
+  hr{
+    border-top: solid 0.2px #EBEBEB;
+    padding: 0px;
+    width: 100%;
+  }
+    margin-bottom: 5px;
+}
+
+.button{
+  --border-radius: 20px;
+  text-align: left;
+  font-size: 10px;
+  padding-left: 5px;
+  img{
+    max-width: 20px;
+    align-self: center;
+  }
+}
+
+}
+
+
+
+div.scrollmenu {
+  margin-top: 5px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+div.scrollmenu div {
+  margin-left: 10px;
+  border-radius: 10px;
+  //background-color: #fbfbfb;
+  display: inline-block;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
   text-decoration: none;
+  position: relative;
+  div{        //Badge ONLINE
+    background-color: var(--ion-color-success);
+    border: solid white;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.image{
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.centralDiv{
+  height: 20px;
+  border-left: solid #EBEBEB 1px;
+}
+
+.containerDiv{
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .topDiv{
+    background-image: url("../../assets/GroupPage/placeholder.png");
+    background-position: center;
+    border: solid 1px white;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+    width: 100%;
+    height: 60%;
+
+
+
+
+  }
+  .imageDiv{
+    width: 100%;
+    height: 25px;
+    background-image: url("../../assets/GroupPage/plus-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+  }
+  .bottomDiv{
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+
+.genericStory{
+  background-image: url("../../assets/GroupPage/placeholder1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+  .avatar{
+    ion-avatar{
+      position:absolute;
+      top: 0px;
+      left: 0px;
+      img{
+        border: double 2px #1877f2;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .text{
+
+    span{
+      position: absolute;
+      left: 2px;
+      bottom: 2px;
+      text-align: end;
+      font-size: 12px;
+    }
+
+  }
+}
+.genericStory::-webkit-scrollbar {
+  display: none;
 }

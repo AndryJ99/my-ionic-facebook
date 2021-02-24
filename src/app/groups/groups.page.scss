@@ -2,6 +2,7 @@
 .title {
   padding-top: 5px;
   padding:5px 0px 0px ;
+  text-align: start;
 }
 .colIcons{
   padding-top: 10px;
@@ -60,6 +61,9 @@ div.scrollmenu a {
     font-size: 14px;
     color: white;
   }
+}
+app-my-post{
+  padding-top: 10px;
 }
 
 

@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import {MyHeaderComponent} from '../my-header/my-header.component';
+import {MyPostComponent} from '../my-post/my-post.component';
 
 
 @NgModule({
@@ -18,6 +19,6 @@ import {MyHeaderComponent} from '../my-header/my-header.component';
   exports: [
     MyHeaderComponent
   ],
-  declarations: [HomePage, MyHeaderComponent]
+  declarations: [HomePage, MyHeaderComponent, MyPostComponent]
 })
 export class HomePageModule {}

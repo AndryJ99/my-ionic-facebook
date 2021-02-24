@@ -12,8 +12,8 @@
     </ion-card-header>
 
     <ion-card-content>
-      <div *ngIf="expand===false">{{ (d.description.length>299)? (d.description | slice:0:299)+'..':(d.description) }} <a *ngIf="d.description.length>300" (click)="clicked()">Other</a></div>
-      <div *ngIf="expand===true">{{d.description}} <a (click)="clicked()">Reduce</a></div>
+      <div *ngIf="expand===false">{{ (d.description.length>299)? (d.description | slice:0:299)+'..':(d.description) }} <a *ngIf="d.description.length>299" (click)="clicked()">Other</a></div>
+      <div *ngIf="expand===true">{{d.description}} <a *ngIf="d.description.length>299" (click)="clicked()">Reduce</a></div>
 
 
 

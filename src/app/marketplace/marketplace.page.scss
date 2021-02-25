@@ -4,13 +4,16 @@
 }
 .scrollFix{
   position: sticky;
-  padding-bottom: 5px;
+  padding-bottom: 5px-;
   top: 0px;
 }
 
 ion-grid{
   ion-row{
-    padding: 5px 0px 3px;
+    padding: 5px 0 0 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     div{
       width: max-content;
       padding: 8px 20px;
@@ -19,6 +22,8 @@ ion-grid{
       border-radius: 20px;
       margin: auto;
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       align-items: center;
       font-size: 12px;
       img{
@@ -32,14 +37,25 @@ ion-grid{
       padding: 0px;
       width: 100%;
     }
+
+  }
+  .rowNoWrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+    margin-left: 10px;
     b{
+      width: 100%;
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
     span{
+      width: 175px;
       margin-left: auto;
-      margin-right: 5px;
-      display: flex;
-      align-items: center;
+      margin-right: 20px;
+      white-space: nowrap;
       font-size: 14px;
       img{
         width: 14px;
@@ -47,6 +63,5 @@ ion-grid{
       }
     }
   }
-
 }
 

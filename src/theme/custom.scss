@@ -1,13 +1,15 @@
 ion-content{
   --background:var(--ion-color-medium);
 }
+ion-header{
+  padding-top: 5px;
+}
 ion-grid{
-  padding: 0px 0px 5px;
+  padding: 0px 0px;
 }
 
 .white{
   background: white;
-
   --background: white;
 }
 

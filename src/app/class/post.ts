@@ -4,3 +4,9 @@ export class Post {
   description: string | undefined |null;
   image: string | undefined |null;
 }
+
+export class Product{
+  image: string | undefined | null;
+  price: string | undefined | null;
+  title: string | undefined | null;
+}

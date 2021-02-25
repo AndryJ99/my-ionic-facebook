@@ -1,0 +1,30 @@
+<ion-header>
+  <app-my-header></app-my-header>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="white">
+    <ion-row class="white scrollFix">
+      <ion-title>
+        Marketplace
+      </ion-title>
+    </ion-row>
+    <ion-row class=" flexed">
+
+      <div><img src="../../assets/Marketplace/sell.png"> Sell</div>
+      <div><img src="../../assets/Marketplace/list.png"> Categories</div>
+      <div><img src="../../assets/Marketplace/bookmark.png"> Saved</div>
+
+    </ion-row>
+
+    <ion-row>
+      <hr>
+      <b>{{"Recommanded products".slice(0,14)+".."}}</b>
+      <span> <img src="../../assets/Marketplace/location-marker.png"> City you chose • Distance</span>
+    </ion-row>
+
+    <app-my-products-mpls></app-my-products-mpls>
+  </ion-grid>
+
+
+</ion-content>

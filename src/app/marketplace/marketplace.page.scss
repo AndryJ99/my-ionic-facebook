@@ -1,0 +1,52 @@
+.flexed{
+  display: flex;
+  align-items: center;
+}
+.scrollFix{
+  position: sticky;
+  padding-bottom: 5px;
+  top: 0px;
+}
+
+ion-grid{
+  ion-row{
+    padding: 5px 0px 3px;
+    div{
+      width: max-content;
+      padding: 8px 20px;
+      height: max-content;
+      background: lightgrey;
+      border-radius: 20px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      img{
+        margin-right: 5px;
+        max-width: 15px;
+        max-height: 15px;
+      }
+    }
+    hr{
+      border-top: solid 0.2px #EBEBEB;
+      padding: 0px;
+      width: 100%;
+    }
+    b{
+      overflow: hidden;
+    }
+    span{
+      margin-left: auto;
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      img{
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+}
+

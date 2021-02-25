@@ -1,0 +1,6 @@
+<ion-row>
+  <div *ngFor="let prod of datas">
+    <img [src]="prod.image" alt="ImageProduct">
+    <span>€ {{prod.price}} • {{prod.title}}</span>
+  </div>
+</ion-row>

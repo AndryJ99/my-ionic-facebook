@@ -16,9 +16,10 @@ import {MyPostComponent} from '../my-post/my-post.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  exports: [
-    MyHeaderComponent
-  ],
+    exports: [
+        MyHeaderComponent,
+        MyPostComponent
+    ],
   declarations: [HomePage, MyHeaderComponent, MyPostComponent]
 })
 export class HomePageModule {}

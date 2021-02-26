@@ -26,7 +26,7 @@
     </ion-row>
 
     <ion-row class="white rowButtons">
-      <ion-button expand="block" class="addStory"> <img src="../../assets/GroupPage/plus-small.png"> Add a story</ion-button>
+      <ion-button expand="block" class="addStory"> <img src="../../assets/GroupPage/plus-small.png"> Add to story</ion-button>
       <ion-button class="options"> ••• </ion-button>
     </ion-row>
 
@@ -38,23 +38,84 @@
       <div><img src="../../assets/profile/suitcase.png" alt="work"> Some information of <b> work</b></div>
       <div><img src="../../assets/profile/cap.png" alt="Graduation Cap"> Some information of <b> studies</b></div>
       <div><img src="../../assets/profile/cap.png" alt="Graduation Cap"> Some information of <b> studies</b></div>
-      <div><span>•••</span> See your information </div>
+      <div><span>•••</span> See about info </div>
     </ion-row>
 
     <ion-row class="white photoRow">
       <div class="divContainer">
+        <ion-row id="top">
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+        </ion-row>
+        <ion-row id="bottom">
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="Photo"></ion-col>
+        </ion-row>
+      </div>
+
+      <ion-button expand="block" class="editDet"> Edit public details </ion-button>
+    </ion-row>
+
+    <ion-row class="white friendsRow">
+      <hr class="fullWidth">
+
+      <div class="divFlex">
+        <h3><b>Friends</b> <a>Find friends</a></h3>
+        <h6>***** friends</h6>
+      </div>
+
+      <div class="containerFriends">
+        <ion-row class="friends">
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+        </ion-row>
+        <ion-row class="friends">
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+          <ion-col><img src="../../assets/GroupPage/placeholder.png" alt="FriendProfilePhoto">Name Surname</ion-col>
+        </ion-row>
+        <ion-button expand="block" class="allFriends"> See all friends </ion-button>
+      </div>
+
+    </ion-row>
+
+    <ion-row class="white postRow">
+      <div class="title">
+        <ion-title>Post</ion-title>
         <div>
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
-        </div>
-        <div>
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
-          <img src="../../assets/GroupPage/placeholder.png" alt="Photo">
+          <ion-button><img src="../../assets/profile/setting-lines.png" alt="Levels"></ion-button>
+          <ion-button><img src="../../assets/profile/settings.png" alt="settings"></ion-button>
         </div>
       </div>
+
+      <div class="input">
+        <ion-avatar>
+          <img src="../../assets/avatar-placeholder-small.png">
+        </ion-avatar>
+        <ion-input placeholder="What's on your mind?"></ion-input>
+      </div>
+
+      <hr class="fullWidth">
+      <div class="buttonsDiv">
+        <div><img src="../../assets/Home/live.png" alt="LiveImage"><b>Live</b></div>
+        <div class="centralDiv"></div>
+        <div><img src="../../assets/Home/photos.png" alt="PhotosImage"><b>Photos</b></div>
+        <div class="centralDiv"></div>
+        <div><img src="../../assets/profile/finish.png" alt="EventImage"><b>Life Event</b></div>
+      </div>
+    </ion-row>
+
+    <ion-row class="white buttonRow">
+      <div><img src="../../assets/profile/photos.png" alt="Photos">Photos</div>
+      <div><img src="../../assets/profile/music.png" alt="Music">Music</div>
+      <div><img src="../../assets/profile/thinking.png" alt="Thinking">Did you know</div>
+    </ion-row>
+
+    <ion-row>
+      <app-my-post></app-my-post>
     </ion-row>
   </ion-grid>
-
 </ion-content>

@@ -1,0 +1,64 @@
+.titleRow{
+  padding:10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  ion-title{
+    padding-left: 0;
+  }
+  div{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: lightgray;
+    display: flex;
+    align-self: center;
+    img{
+      margin: auto;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.notificationRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  .avatars{
+    position: relative;
+    ion-avatar{
+      margin: 10px;
+    }
+    div{
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      img{
+        width: 15px;
+        height: 15px;
+        margin: auto;
+      }
+      background: hotpink;
+    }
+  }
+  .text{
+    padding-right: 10px;
+    font-size: 14px;
+    color: grey;
+    p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 5px;
+      font-size: 14px;
+      height: 50px;
+      color: black;
+    }
+  }
+}

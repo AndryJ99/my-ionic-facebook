@@ -3,5 +3,28 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid class="white">
+    <ion-row class="titleRow">
+      <ion-title>
+        Notifications
+      </ion-title>
+      <div>
+        <img src="../../assets/Notifications/loupe.png">
+      </div>
+    </ion-row>
 
+    <ion-row class="titleRow">
+      <b>Earlier</b>
+    </ion-row>
+
+    <ion-row *ngFor="let data of datas" class="notificationRow">
+      <div class="avatars">
+        <ion-avatar><img [src]="data.image" alt="avatar"></ion-avatar>
+        <div><img [src]="data.type" alt="type"></div>
+      </div>
+
+      <div class="text"><p>{{data.text}}</p> {{data.date}} </div>
+
+    </ion-row>
+  </ion-grid>
 </ion-content>

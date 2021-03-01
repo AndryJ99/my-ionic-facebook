@@ -83,3 +83,31 @@ hr{
     }
   }
 }
+
+.rowMenu{
+  justify-content: space-between;
+  margin: 15px;
+  div{
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 10px;
+    }
+  }
+
+  hr{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    border-top: solid 1px lightgray;
+
+  }
+  .arrowImg{
+    align-self: center;
+    height: 10px;
+  }
+}
+
+#logOut{
+  margin-bottom: 0;
+}
